@@ -7,6 +7,7 @@ const appAlquiler = Router();
 
 let db = await conexion();
 
+
 let Alquiler = db.collection("Alquiler");
 
 appAlquiler.get("/", limitGrt(), async (req, res)=>{
